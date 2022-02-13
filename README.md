@@ -6,6 +6,9 @@ These files are not created for production server. This are created for understa
 
 These are web server config file to sercure web servers and understanding basics of web server security. These only provide basic level like firewall, cronjobs and secure ssh.
 
+# Note:- 
+Don't clone the repository manually instead use the installation script given below.
+
 ## Installation
 
 ```
