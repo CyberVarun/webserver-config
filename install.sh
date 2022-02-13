@@ -44,7 +44,8 @@ do
 		sudo cp /etc/apache2/apache2.conf /etc/apache2/apache2.conf.backup
 		echo -e "${GRN}[*] Installing new configuration files.${RST}"
 		sudo cp -i webserver-config/apache2/apache2.conf /etc/apache2/ 
-
+		sudo cp -i webserver-config/apache2/000-default.conf /etc/apache2/sites-available/
+		
 		if [[ $? == 0 ]];
 		then
 			echo -e "${GRN}[*] Installed new configuration file successfully${RST}\n"
