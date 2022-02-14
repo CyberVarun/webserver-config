@@ -1,4 +1,4 @@
-# <p sytle="color: red;">Disclaimer</p>
+# <p style="color: red;">Disclaimer</p>
 
 These files are not created for production server. This are created for understanding basic server security. So don't use these files in production server and also don't test this files on main system as you may lock down your own system.
 
