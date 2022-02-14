@@ -28,7 +28,7 @@ bash setup.sh
 <hr>
 
 ## Owasp coreruleset
-Modsecurity default rule set will be replaced with owasp coreruleset for apache2 only. You can get more about owasp coreruleset <a href="git clone https://github.com/coreruleset/coreruleset">here</a> 
+Modsecurity default rule set will be replaced with owasp coreruleset for apache2 only. You can get more about owasp coreruleset <a href="https://github.com/coreruleset/coreruleset">here</a> 
 
 <hr>
 
