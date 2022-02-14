@@ -17,7 +17,7 @@ But it will still ask for overwrite permission. So if want you want create backu
 
 ## Installation
 
-Directly download release
+Directly download release from <a href="https://github.com/CyberVarun/webserver-config/releases/download/v0.1/install.sh">here</a>
 
 or 
 ```
