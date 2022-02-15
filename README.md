@@ -50,15 +50,26 @@ It's highly recommend to have a firewall so this will install fail2ban. And by d
 ## Virtual host
 By default virtual files will not be installed. So if want install it just copy the following file into:
 
-###### Apache2 
-site.com.conf > /etc/apache2/sites-available/
-###### Nginx
-site.com > /etc/nginx/sites-available/
-
+<strong>Apache2</strong> 
+site.com.conf > /etc/apache2/sites-available/ <br>
 And enable them with command:<br>
 `sudo a2ensite filename` 
 
 make sure that you have disabled the default files(000-default.conf). If you haven't then use command:<br>
-`sudo a2dissite filename` 
+`sudo a2dissite filename` do disable 
 
-do disable 
+<strong>Nginx</strong>
+site.com > /etc/nginx/sites-available/ <br>
+And enable them with command:<br>
+
+```
+cd /etc/nginx/site-enabled/
+sudo ln -s /etc/nginx/sites-available/filename
+```
+make sure that you have disabled the default files(default). If you haven't then use command:<br>
+
+```
+cd /etc/nginx/site-enabled/
+sudo rm default
+```  
+do disable
