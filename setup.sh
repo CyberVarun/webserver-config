@@ -9,7 +9,7 @@ RST='\033[0m'
 
 FIREWALL_INSTALL (){
         echo -e "${GRN}[*] Installing firewall (fail2ban) for secure logins.${RST}"
-        sudo apt install fail2ban iptables -y > /dev/null 2>&1
+        sudo apt install fail2ban iptables -y 2> /dev/null
         sudo cp -i fail2ban/jail.local /etc/fail2ban/
         echo -e "${GRN}[*] Starting fail2ban and enabling.\n"
         sudo systemctl start fail2ban && sudo systemctl enable fail2ban
@@ -37,7 +37,7 @@ do
 	then
 		echo -e "\n${GRN}[*] Updating system & installing apache2, libapache2-mod-security${RST}"
 		sudo apt update > /dev/null 2>&1
-		sudo apt install apache2 apache2-utils libapache2-mod-security -y 2> /dev/null
+		sudo apt install apache2 apache2-utils libapache2-mod-security2 -y 2> /dev/null
 		echo -e "${GRN}[*] Installed apache2 and modsecurity.${RST}\n"
 	
 	elif [[ ${SERVER} == 2 ]];
