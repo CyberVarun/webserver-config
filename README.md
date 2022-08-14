@@ -22,7 +22,7 @@ But it will still ask for overwrite permission. So if want you want create backu
 Directly download release from <a href="https://github.com/CyberVarun/webserver-config/releases/download/v0.1/install.sh">here</a>
 
 or 
-```
+```bash
 git clone https://github.com/CyberVarun/webserver-config
 cd webserver-config
 bash setup.sh
@@ -62,13 +62,13 @@ make sure that you have disabled the default files(000-default.conf). If you hav
 site.com > /etc/nginx/sites-available/ <br>
 And enable them with command:<br>
 
-```
+```bash
 cd /etc/nginx/site-enabled/
 sudo ln -s /etc/nginx/sites-available/filename
 ```
 make sure that you have disabled the default files(default). If you haven't then use command:<br>
 
-```
+```bash
 cd /etc/nginx/site-enabled/
 sudo rm default
 ```  
